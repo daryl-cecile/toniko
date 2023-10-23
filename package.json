@@ -1,0 +1,31 @@
+{
+  "name": "toniko",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/daryl-cecile/toniko.git",
+  "author": "Daryl Cecile <darylcecile@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
+    "jsdom": "^22.1.0",
+    "next": "^13.5.6",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.4",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.7",
+    "@types/react": "18.2.31"
+  }
+}

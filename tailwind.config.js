@@ -8,9 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'fire': 'linear-gradient(108deg, #FF7A00 15.39%, #FF613F 92.97%)'
+      },
       textColor: {
         'black': '#4F4F4F'
       },
+      colors: {
+        'background': '#323232',
+        'foreground': 'white',
+        'fire-red': '#FF613F',
+        'fire-orange': '#FF7A00'
+      }
     },
   },
   plugins: [],

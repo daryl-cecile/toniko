@@ -11,22 +11,6 @@ export default function WritingPage() {
             <ul>
 
                 <ArticleLink
-                    src="https://slantedpress.com/articles/introducing-neverlander"
-                    title="Introducing: Neverlander"
-                    on="SlantedPress"
-                    year="2019"
-                    type="Music Review"
-                />
-
-                <ArticleLink
-                    src="https://slantedpress.com/articles/introducing-cream-with-a-k"
-                    title="Introducting: Cream with a K"
-                    on="SlantedPress"
-                    year="2019"
-                    type="Film Review"
-                />
-
-                <ArticleLink
                     src="https://slantedpress.com/articles/oh-thank-you-representation-matters"
                     title="Oh, thank you"
                     on="SlantedPress"
@@ -39,6 +23,22 @@ export default function WritingPage() {
                     title="Skatergirls & tampons: 'Skate Kitchen' Review ft. Kabrina Adams"
                     on="SlantedPress"
                     year="2018"
+                    type="Film Review"
+                />
+
+                <ArticleLink
+                    src="https://slantedpress.com/articles/introducing-neverlander"
+                    title="Introducing: Neverlander"
+                    on="SlantedPress"
+                    year="2019"
+                    type="Music Review"
+                />
+
+                <ArticleLink
+                    src="https://slantedpress.com/articles/introducing-cream-with-a-k"
+                    title="Introducting: Cream with a K"
+                    on="SlantedPress"
+                    year="2019"
                     type="Film Review"
                 />
 

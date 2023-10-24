@@ -1,7 +1,7 @@
 import Navbar from "../components/Nav";
-import LogoMark from "../public/logo-mark.svg";
+import { cn } from "../utils/cn";
 import "./app.scss";
-import { inter } from "./fonts";
+import { courier, inter } from "./fonts";
 
 export const metadata = {
 	title: 'Tony Nguyen',
@@ -18,7 +18,7 @@ export default function RootLayout({
 			<body>
 				<div className="relative min-h-[100dvh] flex flex-row">
 					<Navbar className="top-0 left-0 bottom-0 bg-background fixed w-10/12 md:relative md:w-1/5 min-w-[350px]" />
-					<main className="w-4/5 flex-1 flex flex-col items-center justify-center" >
+					<main className={cn("w-4/5 flex-1 flex flex-col items-center justify-center font-medium", courier.className)} >
 						{children}
 					</main>
 				</div>

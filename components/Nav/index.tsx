@@ -63,6 +63,11 @@ export default function Navbar({ className }: SimpleProps) {
                             Videos
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/Tony Nguyen CV 2023.pdf" className={cn("hover:font-bold")}>
+                            CV
+                        </Link>
+                    </li>
                 </ul>
 
                 <ul className="flex flex-col gap-4">

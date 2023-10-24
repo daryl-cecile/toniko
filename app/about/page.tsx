@@ -13,7 +13,7 @@ export default function AboutPage(){
             </p>
             
             <p className={cn("text-black")}>
-                When not working, I’m a <Link href="mixer" className="underline text-fire-red">budding DJ</Link>, part of a music collective, and working on my first documentary film.
+                When not working, I’m a budding DJ, part of a music collective, and working on my first documentary film.
             </p>
 
 

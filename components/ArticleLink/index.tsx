@@ -14,7 +14,8 @@ export default async function ArticleLink(props:ArticleLinkProps){
     return (
         <li className="text-black mb-4">
             <Link className="text-fire-orange underline" href={props.src}>{props.title}</Link> | <span>({props.year}) {props.type}</span>
-            <br /> <span>on {props.on}</span>
+            <br /> 
+            <span>on {props.on}</span>
         </li>
     )
 }

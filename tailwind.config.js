@@ -18,7 +18,11 @@ module.exports = {
         'background': '#323232',
         'foreground': 'white',
         'fire-red': '#FF613F',
-        'fire-orange': '#FF7A00'
+        'fire-orange': '#FF7A00',
+        'tony-green': '#2F6951',
+        'tony-white': '#FFEBD9',
+        'tony-yellow': '#EFA920',
+        'tony-red': '#FF4A22'
       }
     },
   },

@@ -5,17 +5,21 @@ import { cn } from '../../utils/cn';
 type ArticleLinkProps = {
     src:string,
     title: string,
-    on: string,
-    year: string,
+    on?: string,
+    year?: string,
     type: string
 }
 export default async function ArticleLink(props:ArticleLinkProps){
 
     return (
         <li className="text-black mb-4">
-            <Link className="text-fire-orange underline" href={props.src}>{props.title}</Link> | <span>({props.year}) {props.type}</span>
-            <br /> 
-            <span>on {props.on}</span>
+            <Link className="text-fire-orange underline" href={props.src}>{props.title}</Link> | <span>{props.year && `(${props.year})`} {props.type}</span>
+            {props.on && (
+                <>
+                    <br /> 
+                    <span>on {props.on}</span>
+                </>
+            )}
         </li>
     )
 }

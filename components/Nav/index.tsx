@@ -59,8 +59,8 @@ export default function Navbar({ className }: SimpleProps) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/videos" className={cn("hover:font-bold", { "text-fire-red": path === '/videos' })}>
-                            Videos
+                        <Link href="/projects" className={cn("hover:font-bold", { "text-fire-red": path === '/projects' })}>
+                            Projects
                         </Link>
                     </li>
                     <li>

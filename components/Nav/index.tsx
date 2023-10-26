@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import LogoMark from "../../public/logo-mark-filled.svg";
 import SlantedPressLogo from "../../public/slantedpress.svg";
 import InstagramLogo from "../../public/instagram.svg";
+import LinkedInLogo from "../../public/linkedin.svg";
 import MenuIcon from "../../public/menu.svg";
 import { SimpleProps } from "../../utils/base";
 import { cn } from "../../utils/cn";
@@ -83,11 +83,15 @@ export default function Navbar({ className }: SimpleProps) {
 
 
                     <li className="flex flex-row gap-4 items-center ">
-                        <Link href={'https://www.instagram.com/tonyxln/'} className="text-tony-red hover:text-tony-yellow">
+                        <Link target="_blank" href={'https://www.instagram.com/tonyxln/'} className="text-tony-red hover:text-tony-yellow">
                             <InstagramLogo className="w-5 h-5" />
                         </Link>
 
-                        <Link href={'https://slantedpress.com/user/tony'} className="text-tony-red hover:text-tony-yellow">
+                        <Link target="_blank" href={'https://www.linkedin.com/in/tonyxln'} className="text-tony-red hover:text-tony-yellow">
+                            <LinkedInLogo className="w-5 h-5" />
+                        </Link>
+
+                        <Link target="_blank" href={'https://slantedpress.com/user/tony'} className="text-tony-red hover:text-tony-yellow">
                             <SlantedPressLogo className="w-5 h-5" />
                         </Link>
                     </li>

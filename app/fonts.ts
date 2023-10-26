@@ -17,7 +17,7 @@ export const pecita = localFont({
 });
 
 export const courier = localFont({
-	src: '../public/Courier Regular.ttf',
+	src: [{path: '../public/Courier Regular.ttf'}, {path: '../public/Courier.woff2'}, {path: '../public/Courier.woff'}],
 	display: 'swap',
 });
 

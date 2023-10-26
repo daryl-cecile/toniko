@@ -21,11 +21,6 @@ export async function getProjects(){
         return 0;
     });
 
-    console.log(collection.map(o => {
-        const {body, ...other} = o;
-        return other;
-    }));
-
     return collection;
 }
 

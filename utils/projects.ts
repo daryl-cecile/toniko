@@ -4,11 +4,29 @@ import {parse} from "yaml"
 type Project = {
     body: string,
     title?: string,
+    order?: number,
 }
 
 export async function getProjects(){
     const projects = await readdir('public/(projects)');
-    return Promise.all(projects.map(getProject));
+    const collection = await Promise.all(projects.map(getProject));
+
+    collection.sort((a, b) => {
+        if (a.order == undefined && b.order === undefined) return 1;
+        if (a.order == undefined && b.order !== undefined) return 1;
+        if (b.order == undefined && a.order !== undefined) return -1;
+        if (a.order === b.order) return 0;
+        if (a.order > b.order) return 1;
+        if (a.order < b.order) return -1;
+        return 0;
+    });
+
+    console.log(collection.map(o => {
+        const {body, ...other} = o;
+        return other;
+    }));
+
+    return collection;
 }
 
 export async function getProject(slug: string){

@@ -12,8 +12,8 @@ type ArticleLinkProps = {
 export default async function ArticleLink(props:ArticleLinkProps){
 
     return (
-        <li className="text-black mb-4">
-            <Link className="text-fire-orange underline" href={props.src}>{props.title}</Link> | <span>{props.year && `(${props.year})`} {props.type}</span>
+        <li className="text-tony-green font-bold mb-4">
+            <Link className="text-tony-red underline" href={props.src}>{props.title}</Link> | <span>{props.year && `(${props.year})`} {props.type}</span>
             {props.on && (
                 <>
                     <br /> 

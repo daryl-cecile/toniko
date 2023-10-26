@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { cn } from '../../../utils/cn';
-import { caveat } from '../../fonts';
+import { blackSansa, caveat } from '../../fonts';
 import { getProject } from '../../../utils/projects';
 
 export default async function Page(props:{params:{slug:string}}){
@@ -12,11 +12,11 @@ export default async function Page(props:{params:{slug:string}}){
     const {body} = await getProject(props.params.slug);
 
     return (
-        <section className="grid grid-cols-1 gap-8 w-full max-w-4xl mx-auto px-10 my-10">
+        <section className="grid grid-cols-1 gap-8 w-full max-w-4xl mx-auto px-10 my-10 text-tony-green">
             <Markdown 
                 children={body} 
                 components={{
-                    'h1': ({node, ...props}) => <h1 className={cn("text-5xl text-black", caveat.className)} {...props}/>,
+                    'h1': ({node, ...props}) => <h1 className={cn("text-tony-green text-[60px] flex items-center gap-4", blackSansa.className)} {...props}/>,
                     'a': ({node, ...props}) => <a className={cn("text-fire-orange underline")} {...props}/>,
                     'ul': ({node, ...props}) => <ul className={cn("text-black my-0 py-0")} {...props}/>,
                     'li': ({node, ...props}) => <li className={cn("list-disc ml-4")} {...props}/>,

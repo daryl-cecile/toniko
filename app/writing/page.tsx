@@ -1,12 +1,12 @@
 import ArticleLink from "../../components/ArticleLink";
 import { cn } from "../../utils/cn";
-import { caveat } from "../fonts";
+import { blackSansa, caveat } from "../fonts";
 
 export default function WritingPage() {
 
     return (
-        <section className="grid grid-cols-1 gap-8 w-full max-w-4xl mx-auto px-10 my-10">
-            <h1 className={cn("text-5xl text-black", caveat.className)}>Writing</h1>
+        <section className="grid grid-cols-1 gap-8 w-full h-full max-w-4xl mx-auto px-10 my-10">
+            <h1 className={cn("text-tony-green text-[60px] flex items-center gap-4", blackSansa.className)}>Writing</h1>
 
             <ul>
 

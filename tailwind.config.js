@@ -15,10 +15,11 @@ module.exports = {
         'black': '#4F4F4F'
       },
       colors: {
-        'background': '#323232',
+        'background': '#EFA920',
         'foreground': 'white',
         'fire-red': '#FF613F',
         'fire-orange': '#FF7A00',
+        
         'tony-green': '#2F6951',
         'tony-white': '#FFEBD9',
         'tony-yellow': '#EFA920',

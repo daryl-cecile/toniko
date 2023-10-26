@@ -20,3 +20,8 @@ export const courier = localFont({
 	src: '../public/Courier Regular.ttf',
 	display: 'swap',
 });
+
+export const blackSansa = localFont({
+	src: '../public/BlackSansaFree-Regular.otf',
+	display: 'swap',
+});

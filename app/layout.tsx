@@ -16,10 +16,11 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={inter.className}>
 			<body>
-				<div className="relative min-h-[100dvh] flex flex-row">
-					<Navbar className="top-0 left-0 bottom-0 bg-background fixed w-10/12 md:relative md:w-1/5 min-w-[350px]" />
-					<main className={cn("w-4/5 flex-1 flex flex-col items-center justify-center font-medium", courier.className)} >
+				<div className="relative min-h-[100dvh] flex flex-row bg-tony-white">
+					<Navbar className="top-0 left-0 bottom-0 h-[100dvh] bg-tony-green fixed w-10/12 md:sticky md:w-1/5 min-w-[350px]" />
+					<main className={cn("w-full md:w-4/5 flex flex-col font-medium pt-16 min-h-full", courier.className)} >
 						{children}
+						<span className="text-xs text-gray-400 my-10 block text-center">Copyright &copy; {new Date().getFullYear()}</span>
 					</main>
 				</div>
 			</body>

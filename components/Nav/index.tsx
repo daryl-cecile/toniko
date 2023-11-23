@@ -57,7 +57,7 @@ export default function Navbar({ className }: SimpleProps) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/Tony Nguyen CV 2023.pdf" className={cn("hover:font-bold")}>
+                        <Link href="/Tony Nguyen Midweight Creative 2023.pdf" className={cn("hover:font-bold")}>
                             CV
                         </Link>
                     </li>
